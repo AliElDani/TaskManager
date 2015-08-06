@@ -1,8 +1,34 @@
 ﻿<Window x:Class="TaskManager.Views.TaskView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="TaskView" Height="300" Width="300">
+        Title="TaskView" Height="300" Width="500">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Border Grid.Row="0" Background="{StaticResource TaskGrayBrush}"></Border>
+        <TextBlock FontSize="25" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center">Task View</TextBlock>
+        
+        
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>    
+            
+            <StackPanel Grid.Row="0" Grid.Column="0">
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <TextBlock FontSize="15">Task Name :</TextBlock>
+                    <TextBox Margin="10,0,0,0" Width="125" FontSize="15"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <TextBlock FontSize="15">Due Date :</TextBlock>
+                    <DatePicker Margin="10,0,0,0" Width="150"></DatePicker>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
         
     </Grid>
 </Window>
