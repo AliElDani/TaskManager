@@ -43,13 +43,13 @@ namespace TaskManager.Models
         /// <summary>
         /// The task constructor for initializing a new task
         /// </summary>
-        /// <param name="name"the name of the task></param>
+        /// <param name="name">the name of the task></param>
         /// <param name="description">the description of the task</param>
         /// <param name="dueDate">the due date of the task</param>
         /// <param name="progressType">the progress status </param>
         /// <param name="importanceType">the importance level of the task</param>
         /// <param name="users">the list of users associated to the task</param>
-        public Tasks(String name, String description, DateTime dueDate, ProgressType progressStatus, 
+        public Tasks(String name, String description, DateTime dueDate, ProgressType progressStatus,
                         ImportanceType importanceLevel, List<User> users)
         {
             this._name = name;
@@ -58,9 +58,6 @@ namespace TaskManager.Models
             this._progressStatus = progressStatus;
             this._importanceLevel = importanceLevel;
         }
-
-
-
     }
 
 }

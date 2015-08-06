@@ -8,9 +8,9 @@ namespace TaskManager.Models.Enums
 {
     public enum ProgressType
     {
+        NotStarted,
         Started,
         Paused,
-        InProgress,
         Completed
     }
 }
