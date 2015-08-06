@@ -4,6 +4,14 @@
              xmlns:local="clr-namespace:TaskManager"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <Style TargetType="{x:Type Window}">
+                <Setter Property="FontFamily" Value="Segeo UI" />
+            </Style>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Resources/ColorStyles.xaml" />
+                <ResourceDictionary Source="/Resources/CustomControlStyles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
